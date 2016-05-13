@@ -10,8 +10,6 @@ Younger (under 6 months of age) siblings (brothers and sisters) of children with
 ## What does participation involve?
 Participants will travel to their closest study location to receive developmental and behavioral assessments, an MRI scan of the brain and screening for Fragile X syndrome. Participants will be reimbursed for travel and related epenses. Assessment and MRI scans associated with the project are provided at no cost to the family, and participants will be given any new information gained upon completion of the study. Families of children at high risk for developing symptoms of autism will receive assistance with referrals for local services. 
 
-
-
 # Study Goal
 
 The goal of our study is to increase our understanding of the timing and pattern of brain development in very young children with autism. This knowledge will help us to understand the underlying causes and brain mechanisms involved in autism and the relationship of those brain mechanisms to particular behaviors and psychological processes.
@@ -72,8 +70,8 @@ In the search to understand autism, many research programs have begun looking at
   - Teresa Cook-Guercio, M.S.m BCABA Assessments
 
 # Random pages
-  http://www.ibis-network.org/UNC/Bios/Joe.html
-  http://www.ibis-network.org/UNC/Bios/Heather.html
-  http://www.ibis-network.org/UNC/Bios/Chad.html
-  http://www.ibis-network.org/UNC/Bios/Mike.html
-  http://www.ibis-network.org/UNC/Bios/Rachel.html
+  - http://www.ibis-network.org/UNC/Bios/Joe.html
+  - http://www.ibis-network.org/UNC/Bios/Heather.html
+  - http://www.ibis-network.org/UNC/Bios/Chad.html
+  - http://www.ibis-network.org/UNC/Bios/Mike.html
+  - http://www.ibis-network.org/UNC/Bios/Rachel.html
