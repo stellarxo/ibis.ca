@@ -15,7 +15,7 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   color: white;
-  line-height: 70px;
+  line-height: 0px;
 }
 
 h3 {
@@ -107,21 +107,21 @@ video {
 }
 
 .section2 {
-  background:  #bfbfbf;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  background:  #b3ccff;
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
 .section3 {
   background: white;
-  padding-top: 10px;
-  padding-bottom: 80px;
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
 .section4 {
   background:  #262626;
-  padding-top: 10px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 110px;
 }
 
 .section5 {
@@ -131,11 +131,11 @@ video {
 }
 
 .section6 {
-  background: white;
+  background: #e6eeff;
 }
 
 .section7 {
-  background:  #1a1a1a;
+  background:  #4b6abd;
 }
 
 .quote {
@@ -186,29 +186,25 @@ video {
   transition:.9s;
 }
 
-.embed-responsive {
-  position: relative;
-  display: block;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
+
+.bg {
+  background: url('../images/banner.JPG') no-repeat center;
+  background-size: cover;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
+  top:0;
+  left:0;
+  z-index: -1;
 }
-.embed-responsive-16by9 {
-  padding-bottom: 56.25%;
-}
-.embed-responsive-4by3 {
-  padding-bottom: 75%;
+
+.jumbotron {
+  margin-bottom: 0px;
+  padding-top: 400 px;
+  height:650px;
+  color: white;
+  background:transparent;
 }
