@@ -208,3 +208,112 @@ video {
   color: white;
   background:transparent;
 }
+
+.contact-section__col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contact-section__col {
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+.contact-section__col--half {
+    float: left;
+    width: 50%;
+}
+}
+
+.contact-section__col--half {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*@media (min-width: 768px) {
+.section, .about-section, .projects-section, .project-section, .contact-section {
+    padding: 20px 70px 0 70px;
+}
+}*/
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+}
+
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.contact-section .contact-form .form-control {
+    border-radius: 0;
+    box-shadow: none !important;
+}
+
+textarea.form-control {
+    height: auto;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.contact-section .contact-form .form-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0 !important;
+    width: 100%;
+    background: none;
+    border-radius: 0;
+    color: rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.5);
+}

@@ -217,21 +217,7 @@
     </div>
 
   <div class="container-fluid section section7" id="contact">
-    <div class="container features">
-      <!--<h2>Contact Form Coming Soon <a href="#" class="email">ibis@gmail.com</a></h2>-->
-
-
-<form action="https://getsimpleform.com/messages?form_api_token=c4dcbc832b84a546e7653c1f19f4b239" method="post">
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
-  <!-- all your input fields here.... -->
-  <input type='text' name='test' />
-  <input type='submit' value='Test form' />
-</form>
-
-    </div>
-  </div>
-
+    <div class="container">
 
   <div id="form-message" class="alert alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -242,12 +228,8 @@
 
 <div class="contact-section">
   
-  <div class="row">
-    
-    <div class="contact-section__col">
-      <div class="banner">contact</div>
-    </div>
-        
+  <div class="row" style="color: white;">
+  
     <div class="contact-section__col--half">
       <div class="contact-section__content">
 
@@ -259,8 +241,24 @@
         </div>
 
         <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" class="form-control" name="phone" required>
+        </div>
+
+        <div class="form-group">
           <label for="email">E-mail</label>
           <input type="email" class="form-control" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="site">Nearest Study Site</label>
+          <select name="site" class="form-control" required>
+            <option value=""></option>
+            <option value="phi">Children’s Hospital of Philadelphia</option>
+            <option value="sea">University of Washington</option>
+            <option value="stl">Washington University in St. Louis</option>
+            <option value="unc">University of North Carolina</option>
+          </select>
         </div>
 
         <div class="form-group">
@@ -276,15 +274,9 @@
     <div class="contact-section__col--half">
       <div class="contact-section__content">
         <div class="message">
-          Feel free to contact me for any questions, inquiries or business offers. Fill the contact form
-          or say <b>hi</b> on social media.       
-          <div class="social-icons">
-            <a target="_blank" class="social" href="https://twitter.com/alisterdev"><i class="fa fa-twitter fa-lg"></i></a>
-
-            <a target="_blank" class="social" href="http://ca.linkedin.com/in/alisterdev"><i class="fa fa-linkedin fa-lg"></i></a>
-
-            <a target="_blank" class="social" href="https://github.com/alisterdev"><i class="fa fa-github fa-lg"></i></a>
-          </div>  
+          <h3>Contact</h3>
+          
+          Please fill out the form to inquire about enrollment or for any questions.  
         </div>      
       </div>
     </div>
@@ -292,6 +284,8 @@
   </div>
 </div>
 
+    </div>
+  </div>
 
   <hr>
 
@@ -334,7 +328,7 @@
   $().ready(function() {
 
     var $contactForm = $('#contact-form');  
-    var contactToken = 'd462f66099693335138cc7062e6d2c48';
+    var contactToken = 'c4dcbc832b84a546e7653c1f19f4b239';
     var contactSuccessMsg = "Email sent!";
 
     if ($contactForm.length > 0) {
