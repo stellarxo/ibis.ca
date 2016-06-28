@@ -2,7 +2,7 @@
 body {
   padding-bottom: 50px;
   font-family: 'Open Sans', sans-serif;
-  color: #1a1a1a;
+  color: #2B303D;
   font-size: 18px;
 }
 
@@ -36,7 +36,7 @@ h5 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #1a1a1a;
+  color: #2B303D;
 }
 
 h6 {
@@ -102,13 +102,13 @@ video {
 }
 
 .section1 {
-  background: black;
+  background: #2B303D;
   padding-top: 350px;
   padding-bottom: 150px;
 }
 
 .section2 {
-  background:  #b3ccff;
+  background:  #8B9CC8;
   padding-top: 0px;
   padding-bottom: 100px;
 }
@@ -120,7 +120,7 @@ video {
 }
 
 .section4 {
-  background:  #262626;
+  background:  #2B303D;
   padding-top: 60px;
   padding-bottom: 110px;
 }
@@ -132,7 +132,7 @@ video {
 }
 
 .section6 {
-  background: #e6eeff;
+  background: #B1C7FF;
 }
 
 .section7 {
@@ -339,4 +339,13 @@ textarea {
     /*border-radius: 0;*/
     color: rgba(255,255,255,0.8);
     border: 3px solid rgba(255,255,255,0.8);
+}
+
+.tableheader {
+  background-color: #2B303D;
+  color: white;
+}
+
+.tablecell {
+  background-color: white;
 }
