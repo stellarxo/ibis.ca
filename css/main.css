@@ -157,27 +157,43 @@ video {
   color: white;
 }
 
-.email {
-  text-decoration: none;
-  border-bottom: 4px solid white;
-  color: white;
-}
-
-.email:hover {
-  text-decoration: none;
-  border-bottom: 4px solid red;
-  color: white;
-}
-
 .sm:hover {
   /*color: red;*/
   text-decoration: none;
   border-bottom: none;
 }
 
+.navbar-inverse .navbar-nav>.active>a {
+    color: #fff;
+    background: rgba(0,0,0,0);
+}
+
+
+
 .navbar-inverse {
     background: rgba(0,0,0,0.5);
+    color: #fff;
     border: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background: rgba(0,0,0,0);
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #4b6abd;
+    background-color: transparent;
+      -o-transition:.9s;
+  -ms-transition:.9s;
+  -moz-transition:.9s;
+  -webkit-transition:.9s;
+  transition:.9s;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    background: rgba(0,0,0,0);
 }
 
 .navbar-inverse:hover {
