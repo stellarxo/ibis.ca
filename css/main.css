@@ -278,6 +278,7 @@ video {
     margin-bottom: 20px;
     border: 1px solid transparent;
     border-radius: 4px;
+    z-index: 10;
 }
 
 .contact-section .contact-form .form-control {
@@ -346,6 +347,40 @@ textarea {
   color: white;
 }
 
-.tablecell {
-  background-color: white;
+.btn-light {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0 !important;
+    width: 50%;
+    background: none;
+    /*border-radius: 0;*/
+    color: rgba(255,255,255,0.8);
+    border: 2px solid rgba(255,255,255,0.8);
+    margin-left: 25%;
+}
+
+.btn-light:hover {
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.8);
+      -o-transition:.9s;
+  -ms-transition:.9s;
+  -moz-transition:.9s;
+  -webkit-transition:.9s;
+  transition:.9s;
 }
