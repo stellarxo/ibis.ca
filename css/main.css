@@ -243,10 +243,10 @@ video {
 }
 
 @media (min-width: 992px) {
-.contact-section__col--half {
+    .contact-section__col--half {
     float: left;
     width: 50%;
-}
+  }
 }
 
 .contact-section__col--half {
@@ -255,12 +255,6 @@ video {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-/*@media (min-width: 768px) {
-.section, .about-section, .projects-section, .project-section, .contact-section {
-    padding: 20px 70px 0 70px;
-}
-}*/
 
 .alert {
     display: none;
@@ -284,7 +278,6 @@ video {
 }
 
 .contact-section .contact-form .form-control {
-    /*border-radius: 0;*/
     box-shadow: none !important;
 }
 
@@ -302,7 +295,6 @@ textarea.form-control {
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
-    /*border-radius: 0px;*/
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
     -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -339,14 +331,23 @@ textarea {
     outline: 0 !important;
     width: 100%;
     background: none;
-    /*border-radius: 0;*/
     color: rgba(255,255,255,0.8);
     border: 3px solid rgba(255,255,255,0.8);
 }
 
 .tableheader {
-  background-color: #2B303D;
+  font-size: 26px;
+  font-weight: 500px;
+}
+
+.tableheader:hover, {
+  background: #B1C7FF;
   color: white;
+
+}
+
+td:hover {
+  background: #B1C7FF;
 }
 
 .btn-light {
@@ -370,7 +371,6 @@ textarea {
     outline: 0 !important;
     width: 50%;
     background: none;
-    /*border-radius: 0;*/
     color: rgba(255,255,255,0.8);
     border: 2px solid rgba(255,255,255,0.8);
     margin-left: 25%;
