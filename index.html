@@ -139,19 +139,20 @@
 
       <div class="row">
         <div class="col-md-3 features">
-          <img src="images/phi.png">
+
+          <img src="images/phi.png" onmouseover="hover(this, 'images/phi2.png');" onmouseout="unhover(this, 'images/phi.png');" />
           <h4>Philadelphia</h4>
         </div>
         <div class="col-md-3 features">
-          <img src="images/sea.png">
+          <img src="images/sea.png" onmouseover="hover(this, 'images/sea2.png');" onmouseout="unhover(this, 'images/sea.png');" />
           <h4>Seattle</h4>
         </div>
         <div class="col-md-3 features">
-          <img src="images/stl.png">
+          <img src="images/stl.png" onmouseover="hover(this, 'images/stl2.png');" onmouseout="unhover(this, 'images/stl.png');" />
           <h4>St. Louis</h4>
         </div>
         <div class="col-md-3 features">
-          <img src="images/unc.png">
+          <img src="images/unc.png" onmouseover="hover(this, 'images/unc2.png');" onmouseout="unhover(this, 'images/unc.png');" />
           <h4>North Carolina</h4>
         </div>
         &nbsp;
@@ -461,6 +462,15 @@ function validateSubmission($form, token, successMessage) {
 $('.collapse').on('show.bs.collapse', function () {
     $('.collapse.in').collapse('hide');
 });
+    </script>
+
+    <script>
+      function hover(element, url) {
+        element.setAttribute('src', url);
+      }
+      function unhover(element, url) {
+        element.setAttribute('src', url);
+      }
     </script>
 
 
