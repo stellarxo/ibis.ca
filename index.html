@@ -69,7 +69,7 @@
     </div>
   </nav>
 
-<!----------------------- Banner ------------------------>
+  <!----------------------- Banner ------------------------>
 
   <div class="bg"></div>
   <div class="jumbotron" id="top">
@@ -79,7 +79,7 @@
     </div>
   </div>
 
-<!----------------------- About ------------------------>
+  <!----------------------- About ------------------------>
 
   <div class="container-fluid section section3" id="about">
     <div class="container">
@@ -130,7 +130,7 @@
     </div>
   </div>
 
-<!----------------------- Sites ------------------------>
+  <!----------------------- Sites ------------------------>
 
   <div class="container-fluid features section section4" id="sites">
     <div class="container">
@@ -160,7 +160,7 @@
   </div>
 
 
-<!----------------------- FAQ ------------------------>
+  <!----------------------- FAQ ------------------------>
 
 
   <div class="container-fluid section section6" id="faq">
@@ -180,7 +180,8 @@
               <div id="accordion1" class="collapse">The goal of our study is to increase our understanding of the timing and pattern of brain development in very
                 young children with autism. This knowledge will help us to understand the underlying causes and brain mechanisms
                 involved in autism and the relationship of those brain mechanisms to particular behaviors and psychological
-                processes.</div>
+                processes.
+              </div>
             </td>
           </tr>
 
@@ -280,7 +281,7 @@
 
         <div class="row" style="color: white;">
 
-        <div class="contact-section__col--half">
+          <div class="contact-section__col--half">
             <div class="contact-section__content">
               <div class="message" style="text-align: center; padding-top: 100px;">
                 <h3>Contact</h3>
@@ -331,7 +332,7 @@
             </div>
           </div>
 
-          
+
 
         </div>
       </div>
@@ -339,7 +340,7 @@
     </div>
   </div>
 
-<!----------------------- Footer ------------------------>
+  <!----------------------- Footer ------------------------>
 
   <hr>
 
@@ -383,14 +384,43 @@
   $().ready(function() {
 
     var $contactForm = $('#contact-form');  
-    var contactToken = 'c4dcbc832b84a546e7653c1f19f4b239';
+    var contactToken_phi = 'c4dcbc832b84a546e7653c1f19f4b239'; //slee
+    var contactToken_sea = '65b54c42b5c4ef502e0260da5a6e58c7'; // stellajhlee
+    var contactToken_stl = '0f3c31d8e2986554bd39eb362d68b1d9'; // stella.lee
+    var contactToken_unc = 'c4dcbc832b84a546e7653c1f19f4b239';
+    var contactToken_dcc = 'c4dcbc832b84a546e7653c1f19f4b239';
+    var contactToken = null;
     var contactSuccessMsg = "Email sent!";
 
     if ($contactForm.length > 0) {
       $('#contactSubmit').bind('click', function(event) {   
+
+
+
         if ($contactForm[0].checkValidity()) {
           if (event) event.preventDefault();
-          validateSubmission($contactForm, contactToken, contactSuccessMsg);
+
+          switch (document.$contactForm.site) {
+  case "phi" :
+    contactToken = contactToken_phi;
+    break;
+  case "sea" :
+    contactToken = contactToken_sea;
+    break;    
+  case "stl" :
+    contactToken = contactToken_stl;
+    break;
+  case "unc" :
+    contactToken = contactToken_unc;
+    break;
+  default:
+    contactToken = contactToken_dcc;
+}
+
+
+          if (contactToken != null) {
+            validateSubmission($contactForm, contactToken, contactSuccessMsg);
+          }
         } 
       });
     }
