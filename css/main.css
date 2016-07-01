@@ -337,14 +337,13 @@ textarea {
 
 .tableheader {
   font-size: 26px;
-  font-weight: 500px;
+  font-weight: 600;
 }
 
-.tableheader:hover, {
-  background: #B1C7FF;
+.tableheader:hover {
   color: white;
-
 }
+
 
 td:hover {
   background: #B1C7FF;
