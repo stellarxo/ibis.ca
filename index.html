@@ -294,7 +294,7 @@
           <div class="contact-section__col--half">
             <div class="contact-section__content">
 
-              <form id="contact-form" class="contact-form" method="post">
+              <form id="contact-form" name="contact-form"" class="contact-form" method="post">
 
                 <div class="form-group">
                   <label for="name">Name</label>
@@ -313,7 +313,7 @@
 
                 <div class="form-group">
                   <label for="site">Nearest Study Site</label>
-                  <select name="site" class="form-control" required>
+                  <select name="site" id="site" class="form-control" required>
             <option value=""></option>
             <option value="phi">Children’s Hospital of Philadelphia</option>
             <option value="sea">University of Washington</option>
@@ -384,39 +384,39 @@
   $().ready(function() {
 
     var $contactForm = $('#contact-form');  
-    var contactToken_phi = 'c4dcbc832b84a546e7653c1f19f4b239'; //slee
-    var contactToken_sea = '65b54c42b5c4ef502e0260da5a6e58c7'; // stellajhlee
-    var contactToken_stl = '0f3c31d8e2986554bd39eb362d68b1d9'; // stella.lee
+    var contactToken_phi = 'c4dcbc832b84a546e7653c1f19f4b239';
+    var contactToken_sea = '65b54c42b5c4ef502e0260da5a6e58c7';
+    var contactToken_stl = '0f3c31d8e2986554bd39eb362d68b1d9';
     var contactToken_unc = 'c4dcbc832b84a546e7653c1f19f4b239';
     var contactToken_dcc = 'c4dcbc832b84a546e7653c1f19f4b239';
     var contactToken = null;
     var contactSuccessMsg = "Email sent!";
-
+    var form = document.contact-form;
+    
     if ($contactForm.length > 0) {
       $('#contactSubmit').bind('click', function(event) {   
-
-
-
         if ($contactForm[0].checkValidity()) {
           if (event) event.preventDefault();
 
-          switch (document.$contactForm.site) {
-  case "phi" :
-    contactToken = contactToken_phi;
-    break;
-  case "sea" :
-    contactToken = contactToken_sea;
-    break;    
-  case "stl" :
-    contactToken = contactToken_stl;
-    break;
-  case "unc" :
-    contactToken = contactToken_unc;
-    break;
-  default:
-    contactToken = contactToken_dcc;
-}
+          var site = document.getElementById("site").value;
+          console.log(site);
 
+          switch (site) {
+            case "phi" :
+              contactToken = contactToken_phi;
+              break;
+            case "sea" :
+              contactToken = contactToken_sea;
+              break;    
+            case "stl" :
+              contactToken = contactToken_stl;
+              break;
+            case "unc" :
+              contactToken = contactToken_unc;
+              break;
+            default:
+              contactToken = contactToken_dcc;
+          }
 
           if (contactToken != null) {
             validateSubmission($contactForm, contactToken, contactSuccessMsg);
