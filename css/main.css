@@ -212,7 +212,7 @@ video {
 }
 
 .bg {
-  background: url('../images/banner.JPG') no-repeat center;
+  background: url('../images/siblings.jpg') no-repeat center;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -225,7 +225,7 @@ video {
 .jumbotron {
   margin-bottom: 0px;
   padding-top: 400 px;
-  height:650px;
+  height:750px;
   color: white;
   background:transparent;
 }
