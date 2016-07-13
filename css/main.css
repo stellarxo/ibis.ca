@@ -17,7 +17,7 @@ h2 {
   font-weight: 600;
   font-size: 1.4em;
   color: white;
-  line-height: 0px;
+  line-height: 0em;
   text-shadow: 1px 1px black;
 }
 
@@ -37,7 +37,7 @@ h4 {
 h5 {
   font-weight: 700;
   font-size: 1.4em;
-  line-height: 30px;
+  line-height: 1.0em;
   color: #2B303D;
 }
 
@@ -45,7 +45,7 @@ h6 {
   font-weight: 300;
   font-size: 1.2em;
   color: white;
-  line-height: 30px;
+  line-height: 1.0em;
 }
 
 img {
