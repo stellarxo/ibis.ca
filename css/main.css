@@ -154,6 +154,7 @@ video {
 .navbar-inverse .navbar-nav>.active>a {
     color: #fff;
     background: rgba(0,0,0,0);
+    cursor: pointer;
 }
 
 .navbar-inverse {
@@ -197,7 +198,7 @@ video {
 
 .jumbotron {
   margin-bottom: 0px;
-  height: 10em;
+  height: 20em;
   color: white;
   background: #4b6abd;
   
@@ -282,6 +283,7 @@ video {
 textarea.form-control {
     height: auto;
 }
+
 .form-control {
     display: block;
     width: 100%;
@@ -345,6 +347,7 @@ textarea {
 
 td:hover {
   background: #B1C7FF;
+  cursor: pointer;
 }
 
 .btn-light {
