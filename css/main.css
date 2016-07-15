@@ -203,9 +203,7 @@ video {
 
 .jumbotron {
   margin-bottom: 0px;
-  padding-top: 300 px;
-  /*height:6.50em;*/
-  height: 800px;
+  height: 44.5em;
   color: white;
   background:transparent;
 }
@@ -222,7 +220,15 @@ video {
     width: 100%;
 }
 
-.bg {
+
+
+@media (min-width: 992px) {
+    .contact-section__col--half {
+    float: left;
+    width: 50%;
+  }
+
+  .bg {
   background: url('../images/siblings.jpg') no-repeat center;
   background-size: cover;
   position: absolute;
@@ -233,11 +239,6 @@ video {
   z-index: -1;
 }
 
-@media (min-width: 992px) {
-    .contact-section__col--half {
-    float: left;
-    width: 50%;
-  }
 }
 
 .contact-section__col--half {
