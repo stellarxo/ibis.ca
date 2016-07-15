@@ -124,7 +124,7 @@ video {
 }
 
 .section7 {
-  background:  #4b6abd;
+  background: #4b6abd;
   padding-top: 0px;
   padding-bottom: 100px;
 }
@@ -197,9 +197,10 @@ video {
 
 .jumbotron {
   margin-bottom: 0px;
-  height: 14.5em;
+  height: 10em;
   color: white;
-  background:transparent;
+  background: #4b6abd;
+  
 }
 
 .contact-section__col {
@@ -213,8 +214,6 @@ video {
     float: left;
     width: 100%;
 }
-
-
 
 @media (min-width: 992px) {
 
@@ -232,6 +231,7 @@ video {
 
   .jumbotron {
     height: 44.5em;
+    background:transparent;
   }
 
   .bg {
