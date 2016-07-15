@@ -17,7 +17,6 @@ h2 {
   font-weight: 600;
   font-size: 1.4em;
   color: white;
-  line-height: 0em;
   text-shadow: 1px 1px black;
 }
 
@@ -157,8 +156,6 @@ video {
     background: rgba(0,0,0,0);
 }
 
-
-
 .navbar-inverse {
     background: rgba(0,0,0,0.5);
     color: #fff;
@@ -198,12 +195,9 @@ video {
     display: block;
 }
 
-
-
-
 .jumbotron {
   margin-bottom: 0px;
-  height: 44.5em;
+  height: 14.5em;
   color: white;
   background:transparent;
 }
@@ -227,10 +221,17 @@ video {
   h1 {
   font-size: 10em;
 }
+  h2 {
+    line-height: 0em;
+  }
 
     .contact-section__col--half {
     float: left;
     width: 50%;
+  }
+
+  .jumbotron {
+    height: 44.5em;
   }
 
   .bg {
