@@ -66,10 +66,6 @@ img {
   text-align: center;
 }
 
-.butt {
-  margin-left: 60px;
-}
-
 .centeredimg {
   margin-left: auto;
   margin-right: auto;
@@ -101,7 +97,7 @@ video {
 }
 
 .section2 {
-  background:  #8B9CC8;
+  background:  #97A9D9;
   padding-top: 0px;
   padding-bottom: 100px;
 }
@@ -202,21 +198,14 @@ video {
     display: block;
 }
 
-.bg {
-  background: url('../images/siblings.jpg') no-repeat center;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-  z-index: -1;
-}
+
+
 
 .jumbotron {
   margin-bottom: 0px;
-  padding-top: 400 px;
-  height:750px;
+  padding-top: 300 px;
+  /*height:6.50em;*/
+  height: 800px;
   color: white;
   background:transparent;
 }
@@ -231,6 +220,17 @@ video {
 .contact-section__col {
     float: left;
     width: 100%;
+}
+
+.bg {
+  background: url('../images/siblings.jpg') no-repeat center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: -1;
 }
 
 @media (min-width: 992px) {
