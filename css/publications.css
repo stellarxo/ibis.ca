@@ -1,43 +1,43 @@
 .rss-widget {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .rss-widget ul {
-  margin: 0;
-  padding: 0;
-  text-align: left;
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
 
 .rss-widget ul li {
-  list-style: none;
-  padding: 1em;
-  margin-bottom: .125em;
-  display: block;
+    list-style: none;
+    padding: 1em;
+    margin-bottom: .125em;
+    display: block;
 }
 
 .rss-widget ul li {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .rss-widget ul li .blog-item-title {
-  font-weight: 900;
-  line-height: 1.2;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-weight: 900;
+    line-height: 1.2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .rss-widget ul li .blog-item-author {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .rss-widget li:nth-child(2n) {
-  background-color: #4b6abd;
+    background-color: #4b6abd;
 }
 
 .rss-widget li:nth-child(2n+1) {
-  background-color: #97A9D9;
+    background-color: #97A9D9;
 }
 
 td:hover {
