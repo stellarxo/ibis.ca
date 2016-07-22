@@ -53,7 +53,16 @@
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </li>
-                <li><a href="#sites">Study Sites</a></li>
+                <li class="dropdown">
+                    <a href="#sites" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Study Sites</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="phi.html">Philadelphia</a></li>
+                        <li><a href="sea.html">Seattle</a></li>
+                        <li><a href="stl.html">St. Louis</a></li>
+                        <li><a href="unc.html">Chapel Hill</a></li>
+                    </ul>
+                </li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -135,23 +144,19 @@
         <div class="row">
             <div class="col-md-3 centeredtext">
 
-                <img src="images/phi.png" onmouseover="hover(this, 'images/phi2.png');"
-                     onmouseout="unhover(this, 'images/phi.png');"/>
+                <img src="images/phi.png" onmouseover="this.src='images/phi2.png'" onmouseout="this.src='images/phi.png'" />
                 <h4>Philadelphia</h4>
             </div>
             <div class="col-md-3 centeredtext">
-                <img src="images/sea.png" onmouseover="hover(this, 'images/sea2.png');"
-                     onmouseout="unhover(this, 'images/sea.png');"/>
+                <img src="images/sea.png" onmouseover="this.src='images/sea2.png'" onmouseout="this.src='images/sea.png'" />
                 <h4>Seattle</h4>
             </div>
             <div class="col-md-3 centeredtext">
-                <img src="images/stl.png" onmouseover="hover(this, 'images/stl2.png');"
-                     onmouseout="unhover(this, 'images/stl.png');"/>
+                <img src="images/stl.png" onmouseover="this.src='images/stl2.png'" onmouseout="this.src='images/stl.png'" />
                 <h4>St. Louis</h4>
             </div>
             <div class="col-md-3 centeredtext">
-                <img src="images/unc.png" onmouseover="hover(this, 'images/unc2.png');"
-                     onmouseout="unhover(this, 'images/unc.png');"/>
+                <img src="images/unc.png" onmouseover="this.src='images/unc2.png'" onmouseout="this.src='images/unc.png'" />
                 <h4>Chapel Hill</h4>
             </div>
             &nbsp;
@@ -517,22 +522,6 @@
     $('.collapse').on('show.bs.collapse', function () {
         $('.collapse.in').collapse('hide');
     });
-</script>
-
-<!-- Change image on hover; used in maps -->
-<script>
-    function hover(element, url) {
-        function hover(element, url) {
-            element.setAttribute('src', url);
-            element.setAttribute('src', url);
-        }
-    }
-    function unhover(element, url) {
-        function unhover(element, url) {
-            element.setAttribute('src', url);
-            element.setAttribute('src', url);
-        }
-    }
 </script>
 
 </body>

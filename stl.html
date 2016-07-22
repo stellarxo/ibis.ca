@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/icon.png">
+
+    <title>IBIS Network</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html#top"><img src="images/icon_white.png" class="icon"></a></li>
+
+                <li class="dropdown">
+                    <a href="index.html#about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#about">What is IBIS?</a></li>
+                        <li><a href="index.html#participation">Participation</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#sites" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Study Sites</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="phi.html">Philadelphia</a></li>
+                        <li><a href="sea.html">Seattle</a></li>
+                        <li><a href="stl.html">St. Louis</a></li>
+                        <li><a href="unc.html">Chapel Hill</a></li>
+                    </ul>
+                </li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</nav>
+
+
+<!----------------------- Sites ------------------------>
+
+<div class="container-fluid centeredtext section section4" id="sites">
+    <div class="container">
+        &nbsp;
+        <h3>St. Louis</h3>
+        &nbsp;
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 centeredtext">
+
+                <img src="images/stl.png" onmouseover="this.src='images/stl2.png'" onmouseout="this.src='images/stl.png'" />
+            </div>
+            &nbsp;
+        </div>
+    </div>
+</div>
+
+<!----------------------- About ------------------------>
+
+<div class="container-fluid section section3" id="staff">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6 paddedtop20">
+
+                <h5>St. Louis Staff</h5>
+                <p> <!-- write stuff here -->
+                </p>
+                <p><a class="btn btn-default" href="#contact" role="button">Enroll today &raquo;</a></p>
+            </div>
+
+            <div class="col-md-5">
+                <img src="images/brain.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------------- Contact ------------------------>
+
+<div class="container-fluid section section7" id="contact">
+    <div class="container">
+
+        <div id="form-message" class="alert alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true" style="padding-right: 40px;">×</span>
+            </button>
+            <p></p>
+        </div>
+
+        <div class="contact-section">
+
+            <div class="row white">
+
+                <div class="contact-section__col--half">
+                    <div class="contact-section__content">
+                        <div class="message centeredtext paddedtop100">
+                            <h3>Contact Us</h3>
+
+                            Please fill out the form to inquire </br> about enrollment or for any questions.
+
+                            <img src="images/icon_white.png"
+                                 style="display: block; margin: auto; height: 80px; margin-top: 10px;">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section__col--half">
+                    <div class="contact-section__content">
+
+                        <form id="contact-form" name="contact-form"
+                        " class="contact-form" method="post">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="site">Nearest Study Site</label>
+                            <select name="site" id="site" class="form-control" required>
+                                <option value=""></option>
+                                <option value="phi">Children’s Hospital of Philadelphia</option>
+                                <option value="sea">University of Washington</option>
+                                <option value="stl">Washington University in St. Louis</option>
+                                <option value="unc">University of North Carolina</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wishes">Message</label>
+                            <textarea class="form-control" name="message" cols="30" rows="3" required></textarea>
+                        </div>
+
+                        <input id="contactSubmit" type='submit' value='Send' class="form-btn"/>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!----------------------- Footer ------------------------>
+
+<hr>
+
+<footer class="centeredtext">
+
+    <p class="pfooter">This study is funded by the NIH as an Autism Center of Excellence under the
+        "Longitudinal MRI Study of Infants at Risk
+        for Autism" Grant Number: R01HD055741</p>
+
+    <div class="col-md-10">
+    </div>
+    <div class="col-md-2">
+        <p><a class="btn btn-default btn-dark" href="https://ibis.loris.ca/" role="button">LORIS</a></p>
+
+    </div>
+</footer>
+</div>
+<!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
+
+<!-- Smooth transition between page anchors-->
+<script>
+    $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+<!-- Contact form validation -->
+<script>
+    $().ready(function () {
+
+        var $contactForm = $('#contact-form');
+
+        // Email API tokens
+        // https://getsimpleform.com/
+        var contactToken_phi = 'c4dcbc832b84a546e7653c1f19f4b239';
+        var contactToken_sea = '65b54c42b5c4ef502e0260da5a6e58c7';
+        var contactToken_stl = '0f3c31d8e2986554bd39eb362d68b1d9';
+        var contactToken_unc = 'c4dcbc832b84a546e7653c1f19f4b239';
+        var contactToken_dcc = 'c4dcbc832b84a546e7653c1f19f4b239';
+
+        var contactToken = null;
+        var contactSuccessMsg = "Email sent!";
+        var form = document.contact - form;
+
+        if ($contactForm.length > 0) {
+            $('#contactSubmit').bind('click', function (event) {
+                if ($contactForm[0].checkValidity()) {
+                    if (event) event.preventDefault();
+
+                    var site = document.getElementById("site").value;
+                    console.log(site);
+
+                    switch (site) {
+                        case "phi" :
+                            contactToken = contactToken_phi;
+                            break;
+                        case "sea" :
+                            contactToken = contactToken_sea;
+                            break;
+                        case "stl" :
+                            contactToken = contactToken_stl;
+                            break;
+                        case "unc" :
+                            contactToken = contactToken_unc;
+                            break;
+                        default:
+                            contactToken = contactToken_dcc;
+                    }
+
+                    if (contactToken != null) {
+                        validateSubmission($contactForm, contactToken, contactSuccessMsg);
+                    }
+                }
+            });
+        }
+    });
+
+
+    function validateSubmission($form, token, successMessage) {
+
+        $.ajax({
+            dataType: 'jsonp',
+            url: "https://getsimpleform.com/messages/ajax?form_api_token=" + token,
+            data: $form.serialize(),
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            error: function (err) {
+                console.log(err);
+                $("#form-message").addClass('alert-danger');
+                $("#form-message p").html("Error!.");
+                $("#form-message").slideDown().alert();
+                $("#form-message").fadeTo(2000, 500).delay(5000).slideUp(500);
+            },
+            success: function (data) {
+                console.log(data);
+                $("#form-message").addClass('alert-success');
+                $("#form-message p").html(successMessage);
+                $("#form-message").slideDown().alert();
+                $("#form-message").fadeTo(2000, 500).delay(5000).slideUp(500);
+                $form.trigger("reset");
+            }
+        });
+    }
+
+</script>
+
+<!-- Accordian table functionality -->
+<script>
+    $('.collapse').on('show.bs.collapse', function () {
+        $('.collapse.in').collapse('hide');
+    });
+</script>
+
+</body>
+
+</html>
