@@ -133,16 +133,17 @@
         rss.storiesLimit = 25;
 
         $.ajax({
-            url: 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(rss.FEED_URL),
+            url: "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'" + encodeURIComponent(rss.FEED_URL) +"'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
             dataType: 'json',
             success: function (data) {
-                if (data.responseData.feed && data.responseData.feed.entries) {
-                    $.each(data.responseData.feed.entries, function (i, e) {
+                rssItems = data.query.results.rss.channel.item;
+                if (rssItems) {
+                    $.each(rssItems, function (i, e) {
 
                         rss.JSON.push({ //add objects to the array
                             title: e.title,
                             author: e.author,
-                            content: e.content || "",
+                            content: e.description || "",
                             link: e.link
                         });
                     });
@@ -179,7 +180,7 @@
 
     (function ($) {
         // RSS Link
-        RSSWidget("http://www.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1nwkqzEtY5uZ6cp4_0V_8_XGxpSZeTeez5rXQ_rVGZ2J4YJgYA");
+        RSSWidget("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1rgUKXhZzOOZeDrRj7jRLL4nc_-E-rSpMXBzqbs4toh_c6xoPv");
     })(jQuery);
 
 </script>
